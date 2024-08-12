@@ -13,7 +13,7 @@ model Profile {
   id String @id @default(uuid())
   userId String @unique
   name String
-  imgUrl String @db.Text
+  imageUrl String @db.Text
   email String @db.Text
 
   servers Server[]
@@ -27,7 +27,7 @@ model Profile {
 model Server {
   id String @id @default(uuid())
   name String
-  imgUrl String @db.Text
+  imageUrl String @db.Text
   inviteCode String @db.Text
 
   profileId String
